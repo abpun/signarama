@@ -1,0 +1,26 @@
+.nav-menu li a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-menu li a:hover {
+  color: #e74c3c;
+}
+
+.nav-menu li a::after {
+  left: 0;
+  width: 0;
+  content: "";
+  height: 2px;
+  bottom: -5px;
+  position: absolute;
+  background: linear-gradient(135deg, #e74c3c, #8e44ad);
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
