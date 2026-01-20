@@ -1,5 +1,5 @@
 "use client"
-import Link  from "next/link"
+import Link from "next/link"
 import Image from "next/image"
 import Spacer from "../Spacer"
 import { services } from "@/lib/services"
@@ -26,7 +26,7 @@ export default function Services() {
               key={service.id}
               className="cursor-pointer rounded-md bg-[#F8FAFC] shadow-[0_0_5px_0_rgba(0,0,0,0.1)] transition-all hover:-translate-y-2 hover:shadow-[0_0_10px_0_rgba(0,0,0,0.15)]"
             >
-              <Link href={service.link} className="block">
+              <Link href={service.link} className="block" prefetch={false}>
                 <div className="overflow-hidden rounded-t-md">
                   <Splide
                     aria-label="My Favorite Images"
@@ -47,7 +47,7 @@ export default function Services() {
                         <Image
                           src={icon}
                           alt={service.title}
-                          loading="eager" 
+                          loading="eager"
                           className="h-52 w-full object-cover"
                         />
                       </SplideSlide>

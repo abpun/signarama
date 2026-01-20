@@ -1,7 +1,7 @@
 import { industries } from "@/lib/industries"
 import Image from "next/image"
 import Spacer from "../Spacer"
-import  Link from "next/link"
+import Link from "next/link"
 
 export default function Industries() {
   return (
@@ -23,9 +23,9 @@ export default function Industries() {
                 key={industry.id}
                 className="group relative cursor-pointer overflow-hidden rounded-md"
               >
-                <Link href={industry.link} className="block">
+                <Link href={industry.link} className="block" prefetch={false}>
                   <Image
-                    loading="eager" 
+                    loading="eager"
                     src={industry.img}
                     alt={industry.name}
                     className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3"

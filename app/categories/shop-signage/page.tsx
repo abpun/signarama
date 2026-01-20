@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Metadata } from "next"
 import Spacer from "@/components/Spacer"
 import Img1 from "@/assets/categories/shop/01.webp"
 import Img2 from "@/assets/categories/shop/02.webp"
@@ -48,6 +49,12 @@ const benefits = [
   "Improve brand recall",
   "Drive foot traffic into your store",
 ]
+
+export const metadata: Metadata = {
+  title: "Shop Signage in Australia | Signarama",
+  description:
+    "Shop signage is the welcome your customers need. Whether you're a new business or an established one, striking shop signs can help you attract customers.",
+}
 
 export default function ShopSign() {
   return (

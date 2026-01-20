@@ -1,6 +1,6 @@
 "use client"
-import  Link  from "next/link"
-import Image from "next/image";
+import Link from "next/link"
+import Image from "next/image"
 import Spacer from "@/components/Spacer"
 import Logo from "@/assets/signarama-AU.webp"
 import ContactForm from "@/components/sections/ContactForm"
@@ -37,11 +37,21 @@ export default function Header() {
                 "nav-menu absolute top-full right-0 z-9999 mt-5 w-fit flex-col items-center gap-4 rounded-lg bg-white px-10 py-4 shadow-[0_0_10px_0_rgba(0,0,0,0.1)] lg:static lg:mt-0 lg:flex lg:w-auto lg:flex-row lg:gap-8 lg:bg-transparent lg:py-2 lg:shadow-none"
               )}
             >
-              <li><Link href="/#services">Services</Link></li>
-              <li><Link href="/#industries">Industries</Link></li>
-              <li><Link href="/#process">Process</Link></li>
-              <li><Link href="/#about-us">About Us</Link></li>
-              <li><Link href="/#contact">Contact</Link></li>
+              <li>
+                <Link href="/#services">Services</Link>
+              </li>
+              <li>
+                <Link href="/#industries">Industries</Link>
+              </li>
+              <li>
+                <Link href="/blogs">Blogs</Link>
+              </li>
+              <li>
+                <Link href="/#about-us">About Us</Link>
+              </li>
+              <li>
+                <Link href="/#contact">Contact</Link>
+              </li>
 
               <div className="my-4 space-y-4 lg:hidden">
                 <Link

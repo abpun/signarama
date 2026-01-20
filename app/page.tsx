@@ -11,7 +11,7 @@ import HowItWorks from "@/components/sections/HowItWorks"
 import PastClients from "@/components/sections/PastClients"
 
 import "@/styles/scrollbar.css"
-export const dynamic = "force-static";
+export const dynamic = "force-static"
 
 const carousels = [
   { id: 1, img: Img1 },
@@ -22,10 +22,10 @@ const carousels = [
 export default function Home() {
   return (
     <main className="custom-scrollbar overflow-y-auto">
-      <Hero 
-        carousels={carousels} 
-        title="Put your best foot forward"
-        description="Better signs, every time, Australia wide" 
+      <Hero
+        carousels={carousels}
+        title="Signarama Wetherill Park, Australia"
+        description="Better signs, every time, Australia-wide"
       />
       <ContactUs />
       <Services />
@@ -35,5 +35,5 @@ export default function Home() {
       <PastClients />
       <Footer />
     </main>
-  );
+  )
 }

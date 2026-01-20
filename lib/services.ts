@@ -36,7 +36,7 @@ export const services = [
     id: 1,
     title: "Illuminated Signs",
     icons: [Illuminated, Illuminated01, Illuminated02],
-    link: "/categories/illuminated-signs",
+    link: "/categories/illuminated-signs/",
     description:
       "Bright and energy-efficient signage designed to shine both day and night, perfect for grabbing attention.",
   },
@@ -44,7 +44,7 @@ export const services = [
     id: 2,
     title: "Vehicle Signs",
     icons: [Vehicle, Vehicle01, Vehicle02],
-    link: "/categories/vehicle-signs",
+    link: "/categories/vehicle-signs/",
     description:
       "Transform your vehicle into a moving billboard with custom wraps and graphics that promote your brand on the go.",
   },
@@ -52,7 +52,7 @@ export const services = [
     id: 3,
     title: "Shop Signage",
     icons: [Shop, Shop01, Shop02],
-    link: "/categories/shop-signage",
+    link: "/categories/shop-signage/",
     description:
       "Custom-designed shopfront signs that enhance your store's presence and attract foot traffic.",
   },
@@ -60,7 +60,7 @@ export const services = [
     id: 4,
     title: "Promotional Signs",
     icons: [Promotional, Promotional01, Promotional02],
-    link: "/categories/promotional",
+    link: "/categories/promotional/",
     description:
       "Temporary or seasonal signage to highlight promotions, sales, or special events and boost customer engagement.",
   },
@@ -68,7 +68,7 @@ export const services = [
     id: 5,
     title: "Building Signs",
     icons: [Building, Building01, Building02],
-    link: "/categories/building-signs",
+    link: "/categories/building-signs/",
     description:
       "Large-scale exterior signage for buildings, ideal for branding offices, complexes, or corporate spaces.",
   },
@@ -76,7 +76,7 @@ export const services = [
     id: 6,
     title: "Outdoor Signs",
     icons: [Outdoor, Outdoor01, Outdoor02],
-    link: "/categories/outdoor-signs",
+    link: "/categories/outdoor-signs/",
     description:
       "Durable and weather-resistant signage built to withstand the elements while delivering strong visual impact.",
   },
@@ -84,7 +84,7 @@ export const services = [
     id: 7,
     title: "Indoor Signs",
     icons: [Indoor, Indoor01, Indoor02],
-    link: "/categories/indoor-signs",
+    link: "/categories/indoor-signs/",
     description:
       "Interior signs that guide, inform, or decorate — from directory boards to reception branding.",
   },
@@ -92,7 +92,7 @@ export const services = [
     id: 8,
     title: "Service",
     icons: [Service, Service01, Service02],
-    link: "/categories/services",
+    link: "/categories/services/",
     description:
       "Professional signage services from design to installation — ensuring quality and satisfaction at every step.",
   },
