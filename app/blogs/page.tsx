@@ -5,31 +5,45 @@ import Spacer from "@/components/Spacer"
 
 export const metadata = { title: "Blogs" }
 
+const formatDate = (date: string) => {
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(new Date(date))
+}
+
 export default function BlogPage() {
   const sortedPosts = getAllBlogs()
 
-  console.log(sortedPosts.map((p) => p.date))
   return (
     <Spacer className="py-16 xl:max-w-5xl">
-      <h1 className="mb-6 text-3xl font-bold">Blogs</h1>
-      <ul className="grid grid-cols-3 gap-8">
+      <div className="mb-10">
+        <h1 className="text-4xl font-bold tracking-tight">Blogs</h1>
+        <p className="mt-2 text-gray-600">Thoughts and insights</p>
+      </div>
+      <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {sortedPosts.map((post) => (
-          <li
-            key={post.slug}
-            className="overflow-hidden rounded-2xl border border-gray-500"
-          >
+          <li className="group" key={post.slug}>
             <Link href={`/blogs/${post.slug}/`} prefetch={false}>
-              <Image
-                src={post.image || "/placeholder.png"}
-                alt={post.title}
-                width={300}
-                height={200}
-              />
-              <div className="px-4 py-5">
-                <h2 className="text-lg">{post.title}</h2>
-                <span className="text-sm text-gray-500">
-                  ({post.date.toString()})
-                </span>
+              <div className="overflow-hidden rounded-lg border border-gray-200 shadow-sm hover:shadow-lg">
+                <div className="relative flex h-48 items-center bg-gray-100">
+                  <Image
+                    alt={post.title}
+                    width={500}
+                    height={200}
+                    // className="object-cover"
+                    src={post.image || "/posts/placeholder.png"}
+                  />
+                </div>
+                <div className="p-4">
+                  <h2 className="line-clamp-2 text-lg leading-6 font-semibold text-gray-900">
+                    {post.title}
+                  </h2>
+                  <time className="mt-2 block text-sm text-gray-400">
+                    {formatDate(post.date)}
+                  </time>
+                </div>
               </div>
             </Link>
           </li>
