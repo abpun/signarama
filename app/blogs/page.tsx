@@ -2,16 +2,9 @@ import Link from "next/link"
 import Image from "next/image"
 import { getAllBlogs } from "@/lib/posts"
 import Spacer from "@/components/Spacer"
+import { formatDate } from "@/lib/utils"
 
 export const metadata = { title: "Blogs" }
-
-const formatDate = (date: string) => {
-  return new Intl.DateTimeFormat("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  }).format(new Date(date))
-}
 
 export default function BlogPage() {
   const sortedPosts = getAllBlogs()

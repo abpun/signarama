@@ -1,7 +1,9 @@
 ---
 date: 2026-01-20
 image: /posts/Fire_Extinguisher.jpeg
+metaTitle: Fire Extinguisher Signage Meaning | Complete Guide
 title: "Understanding Fire Extinguisher Signage Meaning: A Complete Guide to Emergency Safety"
+metaDescription: Understand fire extinguisher signage meaning & symbols. Learn about fire classes and Australian standards. Types of extinguishers & safety measures for workplace protection.
 ---
 
 Fire extinguisher signage meaning is fundamental to workplace safety and emergency preparedness. These visual markers serve as critical communication tools that direct people to life-saving equipment during fire emergencies. Whether you're managing an office building, warehouse, or commercial premises, understanding fire extinguisher signs ensures your facility complies with safety regulations while protecting lives and property.
@@ -47,6 +49,8 @@ Involve combustible metals such as magnesium, sodium, and potassium—common in 
 ### Class F Fires (Class K in some regions)
 
 Involve cooking oils and fats found in commercial kitchens. The black hexagon with letter **F** represents wet chemical extinguishers designed to cool and smother these unique fires without causing dangerous splattering.
+
+![Fire Extinguisher Symbols](/posts/Fire_Extinguisher_Types_And_Uses.jpeg)
 
 ## Understanding Different Types of Fire Extinguishers
 

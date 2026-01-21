@@ -10,6 +10,8 @@ export type BlogType = {
   slug: string
   title: string
   date: string
+  metaTitle?: string
+  metaDescription?: string
   image?: string
   content: string
 }
@@ -34,11 +36,14 @@ export async function getBlogBySlug(slug: string): Promise<BlogType | null> {
 
   const { data, content } = matter(fs.readFileSync(fullPath, "utf8"))
   const processedContent = await remark().use(html).process(content)
+
   return {
     slug,
-    title: data.title,
     date: data.date,
+    title: data.title,
     image: data.image || "",
+    metaTitle: data.metaTitle || "",
+    metaDescription: data.metaDescription || "",
     content: processedContent.toString(),
   }
 }

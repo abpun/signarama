@@ -7,7 +7,7 @@ export default function Layout({
   children: React.ReactNode
 }>) {
   return (
-    <div className="custom-scrollbar overflow-y-auto">
+    <div id="blog-signarama" className="custom-scrollbar overflow-y-auto">
       {children}
       <Footer />
     </div>

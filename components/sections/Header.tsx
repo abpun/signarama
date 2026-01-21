@@ -25,7 +25,7 @@ export default function Header() {
           </Link>
           <div className="relative">
             <button
-              className="lg:hidden"
+              className="xl:hidden"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               {menuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -34,7 +34,7 @@ export default function Header() {
             <ul
               className={cn(
                 menuOpen ? "flex" : "hidden",
-                "nav-menu absolute top-full right-0 z-9999 mt-5 w-fit flex-col items-center gap-4 rounded-lg bg-white px-10 py-4 shadow-[0_0_10px_0_rgba(0,0,0,0.1)] lg:static lg:mt-0 lg:flex lg:w-auto lg:flex-row lg:gap-8 lg:bg-transparent lg:py-2 lg:shadow-none"
+                "nav-menu absolute top-full right-0 z-9999 mt-5 w-fit flex-col items-center gap-4 rounded-lg bg-white px-10 py-4 shadow-[0_0_10px_0_rgba(0,0,0,0.1)] xl:static xl:mt-0 xl:flex xl:w-auto xl:flex-row xl:gap-8 xl:bg-transparent xl:py-2 xl:shadow-none"
               )}
             >
               <li>
@@ -74,7 +74,7 @@ export default function Header() {
               </div>
             </ul>
           </div>
-          <div className="hidden space-x-2 lg:flex lg:gap-3">
+          <div className="hidden space-x-2 xl:flex xl:gap-3">
             <Link
               href="tel:02 8112 5666"
               className="flex cursor-pointer gap-2 rounded-3xl border border-[#AF1E2D] px-6 py-3 leading-none text-[#AF1E2D] hover:bg-[#AF1E2D] hover:text-white"
