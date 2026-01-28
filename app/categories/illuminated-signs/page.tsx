@@ -12,9 +12,9 @@ import Img5 from "@/assets/categories/illuminated/05.webp"
 import Img6 from "@/assets/categories/illuminated/06.webp"
 
 import Carousels from "@/components/Carousels"
-import DownloadImg from "@/assets/download_img.webp"
 import ContactUs from "@/components/sections/ContactUs"
 import ContactForm from "@/components/sections/ContactForm"
+import DownloadImg from "@/assets/download/illuminated.webp"
 
 const carousels = [
   { id: 1, img: Img1 },
@@ -49,8 +49,9 @@ const studies = [
 ]
 
 export const metadata: Metadata = {
-    title: "Illuminated Signs in Australia | LED, Neon & Backlit Signage",
-    description: "Boost visibility & revenue with eye-catching illuminated signs. LED, neon & backlit signage solutions for retail, restaurants & offices. Day and night customer attraction."
+  title: "Illuminated Signs in Australia | LED, Neon & Backlit Signage",
+  description:
+    "Boost visibility & revenue with eye-catching illuminated signs. LED, neon & backlit signage solutions for retail, restaurants & offices. Day and night customer attraction.",
 }
 
 export default function Illuminated() {
@@ -88,7 +89,7 @@ export default function Illuminated() {
               </p>
             </div>
 
-            <Link href="/guide.pdf" target="_blank">
+            <Link href="/guides/Illuminated_Guide.pdf" target="_blank">
               <Image
                 src={DownloadImg}
                 alt="Illuminated Shop sign"

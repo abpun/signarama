@@ -44,7 +44,7 @@ export const services = [
     id: 2,
     title: "Vehicle Signs",
     icons: [Vehicle, Vehicle01, Vehicle02],
-    link: "/categories/vehicle-signs/",
+    link: "/categories/vehicle-signage/",
     description:
       "Transform your vehicle into a moving billboard with custom wraps and graphics that promote your brand on the go.",
   },

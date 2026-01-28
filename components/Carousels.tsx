@@ -12,7 +12,7 @@ type CarouselItem = {
 
 type HeroProps = {
   title: string
-  description: string
+  description?: string
   carousels: CarouselItem[]
 }
 
@@ -47,7 +47,12 @@ export default function Carousels({
           {carousels.map((car) => (
             <SplideSlide key={car.id}>
               <div className="relative h-auto">
-                <Image src={car.img} alt="carousel-img" loading="eager" className="w-full" />
+                <Image
+                  src={car.img}
+                  alt="carousel-img"
+                  loading="eager"
+                  className="w-full"
+                />
                 <div className="top-0 left-0 hidden h-full w-full bg-black/30 md:absolute" />
               </div>
             </SplideSlide>
